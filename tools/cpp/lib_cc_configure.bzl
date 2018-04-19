@@ -197,6 +197,8 @@ def get_cpu_value(repository_ctx):
         return "arm"
     if result.stdout.strip() in ["aarch64"]:
         return "aarch64"
+    if result.stdout.strip() in ["riscv", "riscv32", "riscv64"]:
+        return "riscv"
     return "k8" if result.stdout.strip() in ["amd64", "x86_64", "x64"] else "piii"
 
 def is_cc_configure_debug(repository_ctx):

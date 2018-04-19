@@ -716,6 +716,11 @@ config_setting(
     values = {"host_cpu": "ppc"},
 )
 
+config_setting(
+    name = "riscv",
+    values = {"host_cpu": "riscv"},
+)
+
 test_suite(
     name = "all_windows_tests",
     tests = [
