@@ -32,6 +32,11 @@ constraint_value(
     constraint_setting = ":cpu",
 )
 
+constraint_value(
+    name = "riscv",
+    constraint_setting = ":cpu",
+)
+
 # These match values in //src/main/java/com/google/build/lib/util:OS.java
 constraint_setting(name = "os")
 

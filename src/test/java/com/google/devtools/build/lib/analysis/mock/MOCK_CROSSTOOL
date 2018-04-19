@@ -32,6 +32,10 @@ default_toolchain {
   cpu: "ppc"
   toolchain_identifier: "local_linux"
 }
+default_toolchain {
+  cpu: "riscv"
+  toolchain_identifier: "local_linux"
+}
 
 toolchain {
   abi_version: "local"

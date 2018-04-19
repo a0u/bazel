@@ -71,6 +71,10 @@ if [ "${MACHINE_TYPE}" = 'ppc64' -o "${MACHINE_TYPE}" = 'ppc64le' ]; then
   MACHINE_IS_64BIT='yes'
 fi
 
+if [ "${MACHINE_TYPE}" = 'riscv64' ]; then
+  MACHINE_IS_64BIT='yes'
+fi
+
 PATHSEP=":"
 case "${PLATFORM}" in
 linux)

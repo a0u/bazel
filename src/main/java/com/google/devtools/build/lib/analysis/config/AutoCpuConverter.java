@@ -57,6 +57,8 @@ public class AutoCpuConverter implements Converter<String> {
               return "arm";
             case S390X:
               return "s390x";
+            case RISCV:
+              return "riscv";
             default:
               return "unknown";
           }

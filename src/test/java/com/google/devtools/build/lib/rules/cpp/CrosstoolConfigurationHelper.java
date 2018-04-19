@@ -71,6 +71,8 @@ public class CrosstoolConfigurationHelper {
           return "arm";
         case S390X:
           return "s390x";
+        case RISCV:
+          return "riscv";
         default:
           return "unknown";
       }

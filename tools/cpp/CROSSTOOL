@@ -50,6 +50,11 @@ default_toolchain {
 }
 
 default_toolchain {
+  cpu: "riscv"
+  toolchain_identifier: "local_linux"
+}
+
+default_toolchain {
   cpu: "ios_x86_64"
   toolchain_identifier: "ios_x86_64"
 }

@@ -26,6 +26,7 @@ public enum CPU {
   PPC("ppc", ImmutableSet.of("ppc", "ppc64", "ppc64le")),
   ARM("arm", ImmutableSet.of("aarch64", "arm", "armv7l")),
   S390X("s390x", ImmutableSet.of("s390x", "s390")),
+  RISCV("riscv", ImmutableSet.of("riscv", "riscv32", "riscv64")),
   UNKNOWN("unknown", ImmutableSet.<String>of());
 
   private final String canonicalName;
